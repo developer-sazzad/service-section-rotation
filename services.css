@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.service {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.service-title {
+    color: #131313;
+    font-size: 3rem;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+
+.service-desciption {
+    color: #3b4c77;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.5rem;
+    margin: 15px 0px;
+}
+
+span {
+    color: #ec1748;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 20px;
+
+}
+
+.service-box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 50px 10px 50px 10px;
+    padding: 25px;
+
+}
+
+.service-box i {
+    color: #ec1748;
+    padding: 30px;
+    border: 2px solid #ec1748;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.service-box:hover i {
+
+    transform: rotate(360deg);
+    background-color: #ec1748;
+    color: #fff;
+    transition: transform 1s;
+}
+
+.service-box-title {
+    margin-top: 30px;
+    color: #131313;
+    font-size: 22px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+
+}
+
+.service-box-description {
+    margin-top: 15px;
+    color: #3b4c77;
+    font-size: 16px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+
+}
+
+@media screen and (max-width: 576px) {
+    .services-container {
+        flex-direction: column;
+    }
+
+    .service-box {
+        margin: 30px 10px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    .services-container {
+        flex-direction: column;
+    }
+
+    .service-box {
+        margin: 30px 10px;
+    }
+}
